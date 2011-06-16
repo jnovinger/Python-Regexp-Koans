@@ -5,12 +5,12 @@
 
 import unittest
 
-from koans.about_asserts import AboutAsserts
+from koans.about_match import AboutMatch
 
 def koans():
     loader = unittest.TestLoader()
     suite = unittest.TestSuite()
     loader.sortTestMethodsUsing = None
-    suite.addTests(loader.loadTestsFromTestCase(AboutAsserts))
+    suite.addTests(loader.loadTestsFromTestCase(AboutMatch))
 
     return suite
