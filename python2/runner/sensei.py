@@ -31,7 +31,7 @@ class Sensei(MockableTestResult):
                 self.stream.writeln()
                 self.stream.writeln("{0}{1}Thinking {2}".format(
                     Fore.RESET, Style.NORMAL, helper.cls_name(test)))
-                if helper.cls_name(test) != 'AboutMatch':
+                if helper.cls_name(test) != 'AboutAsserts':
                     self.lesson_pass_count += 1
 
     def addSuccess(self, test):
